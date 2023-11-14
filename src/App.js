@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Attendance from "./Components/Attendance/attendance.jsx";
+import Behaviour from "./Components/Behaviour/behaviour.jsx";
+import Homework from "./Components/Homework/homework.jsx";
+import Navbar from './Components/Navbar/Navbar.jsx';
+import './CSS/App.css'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <h2 style={{marginLeft:"2em"}}>HELLO! PISENCE</h2>
+      <Attendance />
+      <div className="student_data">
+        <Homework />
+        <Behaviour />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.homework_container {
+    background-color: #d1d1d1;
+    width: 30vw;
+    font-size: 1.5em;
+    margin: 1em 1.8em 1.8em 1.4em;
+    padding: 0.2em;
+    font-weight: 500;
+    text-align: center;
+    min-height: 30vh;
+    /* margin-left: 1.8em; */
+}
+
+.homework_heading{
+    padding-top: 0.5em;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.homework_list {
+    /* border: 3px solid red; */
+    padding-left: 0.5em;
+    padding-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.homework_item{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 50%;
+}

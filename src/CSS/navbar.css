@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  top: 0;
+  width: 98vw;
+  height: 5vh;
+  background-color: rgb(12, 102, 87);
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.5em;
+  padding: 1.2em;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease-in-out;
+  z-index: 3;
+  position: sticky;
+}
+
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.hamburger.open {
+  color: black;
+}
+
+.bar {
+  display: block;
+  width: 2em;
+  height: 0.25em;
+  background-color: rgb(177, 145, 102);
+  margin: 5px 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.second {
+  width: 1.5em;
+}
+
+.third {
+  width: 1.2em;
+}
+
+.profile{
+  color: burlywood;
+  position: absolute;
+  right: 2em;
+  cursor: pointer;
+}
+
+
+
+.hamburger.open .bar {
+  background-color: black;
+}
+.nav-menu-open {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  margin-top: 7.5vh;
+  height: 100vh;
+  width: 20vw;
+  background-color: #eeeeee;
+  z-index: 1;
+  left: 0;
+  transition: left 2s ease-in-out;
+  font-size: 120%;
+}
+.nav-menu-close{
+  display: none;
+  left: -30vw;
+}
+
+.menu-item {
+  padding: 1.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+
+}
+
+.menu-item:hover {
+  background-color: #b4b4b4;
+}
+.menu-item img,svg{
+  padding-right: 0.3em;
+}
